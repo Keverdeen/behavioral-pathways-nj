@@ -78,9 +78,9 @@
     color: var(--foreground);
     font-family: var(--font-sans);
     background-image:
-      radial-gradient(ellipse 80% 60% at 50% -10%, oklch(0.30 0.14 290 / 0.45), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 100% 30%, oklch(0.35 0.18 340 / 0.18), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 0% 60%, oklch(0.40 0.14 195 / 0.15), transparent 60%);
+      radial-gradient(ellipse 80% 60% at 50% -10%, oklch(0.75 0.14 295 / 0.18), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 100% 30%, oklch(0.78 0.16 340 / 0.10), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 0% 60%, oklch(0.80 0.14 195 / 0.10), transparent 60%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
