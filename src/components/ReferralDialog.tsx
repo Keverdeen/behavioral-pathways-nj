@@ -30,23 +30,15 @@ export function ReferralDialogProvider({ children }: { children: ReactNode }) {
             <DialogTitle>Jersey Behavioral Care — Referral Form</DialogTitle>
             <DialogDescription>Submit a referral inquiry to our intake team.</DialogDescription>
           </VisuallyHidden>
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/OgDIPpboASPfryBVlBkn"
-            style={{ width: "100%", height: "100%", border: "none", borderRadius: 3 }}
-            id="popup-OgDIPpboASPfryBVlBkn"
-            data-layout="{'id':'POPUP'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="JERSEY BEHAVIORAL CARE (JBC) – REFERRAL FORM"
-            data-height="911"
-            data-layout-iframe-id="popup-OgDIPpboASPfryBVlBkn"
-            data-form-id="OgDIPpboASPfryBVlBkn"
-            title="JERSEY BEHAVIORAL CARE (JBC) – REFERRAL FORM"
-          />
+          {isOpen && (
+            <iframe
+              key="jbc-referral-iframe"
+              src="https://api.leadconnectorhq.com/widget/form/OgDIPpboASPfryBVlBkn"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: 3 }}
+              data-form-id="OgDIPpboASPfryBVlBkn"
+              title="JERSEY BEHAVIORAL CARE (JBC) – REFERRAL FORM"
+            />
+          )}
         </DialogContent>
       </Dialog>
     </ReferralCtx.Provider>
