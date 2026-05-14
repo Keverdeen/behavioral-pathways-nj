@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-illustration.png";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { useReferralDialog } from "@/components/ReferralDialog";
 import {
   Building2, Scale, Briefcase, GraduationCap, Landmark, HeartPulse,
   Video, Languages, CalendarClock, Workflow, ArrowRight, CheckCircle2,
@@ -95,6 +96,7 @@ const steps = [
 ];
 
 function HomePage() {
+  const { open: openReferral } = useReferralDialog();
   return (
     <div className="min-h-screen">
       <SiteHeader />
@@ -125,12 +127,12 @@ function HomePage() {
               referral support for hospitals, courts, employers, schools, and agencies across the state.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3.5 font-semibold text-primary-foreground shadow-glow hover:shadow-[0_25px_70px_-15px_oklch(0.55_0.22_295_/_0.7)] transition">
+              <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3.5 font-semibold text-primary-foreground shadow-glow hover:shadow-[0_25px_70px_-15px_oklch(0.55_0.22_295_/_0.7)] transition cursor-pointer">
                 Request Referral Information <ArrowRight className="size-4" />
-              </a>
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur px-7 py-3.5 font-semibold text-foreground hover:bg-card transition">
+              </button>
+              <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur px-7 py-3.5 font-semibold text-foreground hover:bg-card transition cursor-pointer">
                 Contact Our Team
-              </a>
+              </button>
             </div>
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
               {[
@@ -322,12 +324,12 @@ function HomePage() {
               Request referral information or contact the intake team to learn more about Jersey Behavioral Care.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <a href="mailto:intake@jerseybehavioralcare.com" className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground hover:bg-background/90 transition">
+              <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground hover:bg-background/90 transition cursor-pointer">
                 Request Referral Information <ArrowRight className="size-4" />
-              </a>
-              <a href="mailto:intake@jerseybehavioralcare.com" className="inline-flex items-center gap-2 rounded-full bg-background/15 backdrop-blur border border-primary-foreground/30 px-7 py-3.5 font-semibold text-primary-foreground hover:bg-background/25 transition">
+              </button>
+              <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background/15 backdrop-blur border border-primary-foreground/30 px-7 py-3.5 font-semibold text-primary-foreground hover:bg-background/25 transition cursor-pointer">
                 Contact Our Team
-              </a>
+              </button>
             </div>
             <p className="mt-8 text-sm text-primary-foreground/80">
               Union, New Jersey · Therapy · Counseling · Evaluations · Telehealth
