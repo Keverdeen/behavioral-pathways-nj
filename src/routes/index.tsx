@@ -321,14 +321,11 @@ function HomePage() {
               Looking for a reliable behavioral health provider for referrals?
             </h2>
             <p className="mt-6 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              Submit referral information directly through the referral form or ask clients to complete the initial intake form at <a href="https://jbcclinic.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary-foreground">jbcclinic.com</a>.
+              Submit referral information directly through the referral form below:
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground hover:bg-background/90 transition cursor-pointer">
-                Request Referral Information <ArrowRight className="size-4" />
-              </button>
-              <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background/15 backdrop-blur border border-primary-foreground/30 px-7 py-3.5 font-semibold text-primary-foreground hover:bg-background/25 transition cursor-pointer">
-                Contact Our Team
+                Submit Referral Information <ArrowRight className="size-4" />
               </button>
             </div>
             <p className="mt-8 text-sm text-primary-foreground/80">
