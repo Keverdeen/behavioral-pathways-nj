@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { ReferralDialogProvider } from "@/components/ReferralDialog";
 
 function NotFoundComponent() {
   return (
@@ -117,7 +118,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <ReferralDialogProvider>
+        <Outlet />
+      </ReferralDialogProvider>
     </QueryClientProvider>
   );
 }
