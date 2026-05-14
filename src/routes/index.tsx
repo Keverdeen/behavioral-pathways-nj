@@ -162,9 +162,9 @@ function HomePage() {
       {/* WHO WE WORK WITH */}
       <section className="mx-auto max-w-7xl px-6 py-20" id="partners">
         <div className="text-center max-w-2xl mx-auto">
-          <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">We Work With</p>
+          <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Who Refers to Us</p>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold">
-            Partners across the <span className="text-gradient">care continuum</span>
+            Organizations sending referrals to <span className="text-gradient">JBC Clinic</span> include:
           </h2>
         </div>
         <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
