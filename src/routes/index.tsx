@@ -318,10 +318,16 @@ function HomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.25),transparent_50%)]" aria-hidden />
           <div className="relative">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-primary-foreground max-w-3xl mx-auto leading-[1.05]">
-              Looking for outpatient behavioral health referral support?
+              Looking for a reliable behavioral health provider for referrals?
             </h2>
             <p className="mt-6 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              Request referral information or contact the intake team to learn more about Jersey Behavioral Care.
+              Jersey Behavioral Care works with hospitals, schools, courts, HR departments, government agencies, healthcare providers, and community organizations across New Jersey.
+            </p>
+            <p className="mt-4 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
+              Submit referral information directly through the referral form or ask clients to complete the initial intake form at JBC Clinic.
+            </p>
+            <p className="mt-4 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
+              The intake team can assist with scheduling coordination, appointment availability, and outpatient behavioral health services.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground hover:bg-background/90 transition cursor-pointer">
