@@ -321,13 +321,7 @@ function HomePage() {
               Looking for a reliable behavioral health provider for referrals?
             </h2>
             <p className="mt-6 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              Jersey Behavioral Care works with hospitals, schools, courts, HR departments, government agencies, healthcare providers, and community organizations across New Jersey.
-            </p>
-            <p className="mt-4 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              Submit referral information directly through the referral form or ask clients to complete the initial intake form at JBC Clinic.
-            </p>
-            <p className="mt-4 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              The intake team can assist with scheduling coordination, appointment availability, and outpatient behavioral health services.
+              Submit referral information directly through the referral form or ask clients to complete the initial intake form at <a href="https://jbcclinic.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary-foreground">jbcclinic.com</a>.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground hover:bg-background/90 transition cursor-pointer">
