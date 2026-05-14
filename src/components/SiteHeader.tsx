@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
+import { useReferralDialog } from "@/components/ReferralDialog";
 
 export function SiteHeader() {
+  const { open } = useReferralDialog();
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border/40">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
@@ -19,9 +21,9 @@ export function SiteHeader() {
           <a href="#process" className="hover:text-foreground transition">Process</a>
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
-        <a href="#contact" className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-cta px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95 transition">
+        <button onClick={open} className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-cta px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95 transition cursor-pointer">
           Request Referral →
-        </a>
+        </button>
       </div>
     </header>
   );
