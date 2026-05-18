@@ -301,7 +301,7 @@ function HomePage() {
             </p>
           </div>
           <div className="rounded-2xl border border-border/60 bg-card/40 backdrop-blur p-8">
-            <h3 className="text-2xl font-bold">About the Clinic</h3>
+            <h3 className="text-2xl font-bold">About JBC Clinic</h3>
             <p className="mt-3 text-muted-foreground leading-relaxed">
               An outpatient behavioral health organization based in Union, New Jersey, providing therapy,
               counseling, evaluations, and coordinated outpatient support for adolescents, adults, families,
