@@ -36,7 +36,7 @@ const services = [
   { icon: Pill, title: "Medication Management", desc: "Ongoing medication oversight aligned with treatment plans." },
   { icon: Video, title: "Telehealth Appointments", desc: "Secure virtual sessions for accessible behavioral health care." },
   { icon: ClipboardList, title: "Behavioral Assessments", desc: "Targeted assessments to inform care planning and referrals." },
-  { icon: Users, title: "Care Coordination", desc: "Coordinated communication with referring teams and families." },
+  { icon: Users, title: "Care Coordination", desc: "Coordinated communication with referring teams and their families." },
 ];
 
 const partners = [
