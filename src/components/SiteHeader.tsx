@@ -22,7 +22,7 @@ export function SiteHeader() {
           <a href="#contact" className="hover:text-foreground transition">Contact</a>
         </nav>
         <button onClick={open} className="hidden sm:inline-flex items-center gap-2 rounded-full bg-gradient-cta px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95 transition cursor-pointer">
-          Request Referral →
+          Submit Referral →
         </button>
       </div>
     </header>
