@@ -130,8 +130,8 @@ function HomePage() {
               <button onClick={openReferral} className="inline-flex items-center gap-2 rounded-full bg-gradient-cta px-7 py-3.5 font-semibold text-primary-foreground shadow-glow hover:shadow-[0_25px_70px_-15px_oklch(0.55_0.22_295_/_0.7)] transition cursor-pointer">
                 Request Referral Information <ArrowRight className="size-4" />
               </button>
-              <a href="tel:+19738472464" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur px-7 py-3.5 font-semibold text-foreground hover:bg-card transition cursor-pointer">
-                Call +1 973-847-2464
+              <a href="tel:+19082912727" className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur px-7 py-3.5 font-semibold text-foreground hover:bg-card transition cursor-pointer">
+                Call +1 908-291-2727
               </a>
             </div>
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
